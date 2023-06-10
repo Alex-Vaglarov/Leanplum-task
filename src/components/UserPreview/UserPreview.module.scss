@@ -1,0 +1,27 @@
+.wrapper {
+    margin-bottom: 4px;
+    padding: 8px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+
+    &.selected,
+    &:hover {
+        border: 1px solid #000000;
+        border-radius: 4px;
+        background-color: #ffffff;
+    }
+}
+
+.name {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.infoWrapper {
+    display: flex;
+    color: #b2b7b9;
+    font-size: 12px;
+    text-align: left;
+}

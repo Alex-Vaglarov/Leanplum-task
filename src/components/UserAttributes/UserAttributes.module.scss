@@ -1,0 +1,40 @@
+.wrapper {
+    margin-top: 16px;
+}
+
+.tableHeader,
+.tableBody {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: left;
+}
+
+.tableHeader {
+    .attribute,
+    .value {
+        padding-bottom: 4px;
+        padding-left: 8px;
+        color: #e1e4e5;
+    }
+}
+
+.tableBody {
+    .attribute,
+    .value {
+        padding: 8px;
+    }
+}
+
+.attribute,
+.value {
+    border-bottom: 1px solid #e1e4e5;
+}
+
+.attribute {
+    width: 30%;
+}
+
+.value {
+    width: 68%;
+}

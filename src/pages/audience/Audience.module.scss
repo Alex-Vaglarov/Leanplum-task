@@ -1,0 +1,72 @@
+.pageWrapper {
+    display: flex;
+}
+
+.listSideWrapper {
+    flex-shrink: 0;
+    width: 40%;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: rgba(246, 249, 251, 0.5);
+
+    // style the scrollbar
+    // FOR FIREFOX
+    scrollbar-color: #a9a9a9 #708090;
+    scrollbar-width: thin;
+
+    // FOR CHROME
+    &::-webkit-scrollbar {
+        width: 2px;
+      }
+       
+    &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3);
+    }
+    
+    &::-webkit-scrollbar-thumb {
+    background-color: #a9a9a9;
+    outline: 1px solid #708090;
+    }
+}
+
+.listSideHeader {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid #e1e4e5;
+}
+
+.usersList {
+    padding: 16px;
+}
+
+.infoSideWrapper {
+    width: 60%;
+    padding: 16px 24px;
+}
+
+.infoBoxesWrapper {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+
+    span {
+        font-size: 30px;
+    }
+}
+
+.noSelectedUser {
+    width: 100%;
+    padding-top: 24px;
+    color: #be0000;
+    font-size: 20px;
+    text-align: center;
+}
